@@ -1,0 +1,398 @@
+body{
+    background-size: cover;
+}
+body .divContainerHeader{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background: rgb(30, 50, 80);
+    box-shadow: 0 2px 2px 1px rgba(5, 40, 100, 0.2);
+}
+body .divContainer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+body .divContainerHeader header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+body .divContainerHeader header .imgLogo{
+    margin-left: 1rem;
+    height: 70px;
+}
+body .divContainerHeader header .fa-bars{
+    margin-right: 1rem;
+    font-size: 2rem;
+    /* color: rgb(5, 40, 100); */
+    color: white;
+    cursor: pointer;
+}
+body main{
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+body main .divWhats{
+    width: 34px;
+    height: 34px;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1rem;
+    background: white;
+    border-radius: ;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+body main .divWhats .fa-square-whatsapp{
+    font-size: 2.5rem;
+    color: #34af23;
+    margin: 0;
+    cursor: pointer;
+}
+body main .divImgDefault{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body main .divImgDefault .imgDefault{
+    width: 100%;
+    margin-top: -50px;
+}
+body main .containerCard{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+body main .containerCard .divCard{
+    width: 90%;
+    max-width: 288px;
+    /* border-bottom: 2px solid #242625; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #209711;
+}
+body main .containerCard .divCard .headerCard{
+    width: 100%;
+    height: 2rem;
+    background: orangered;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: .5rem; */
+}
+body main .containerCard .divCard .headerCard .fa-house{
+    font-size: 1.125rem;
+    margin-left: 1rem;
+    color: white;
+}
+body main .containerCard .divCard .headerCard h1{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    color: white;
+    align-self: baseline;
+}
+body main .containerCard .divCard img{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+body main .containerCard .divCard article{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 1rem 1rem 1rem;
+    /* color: #242625; */
+    color: white;
+    align-self: baseline;
+    /* text-align: justify; */
+    line-height: 150%;
+}
+.divContainerFinal{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+}
+body main .divBtn{
+    width: 100%;
+    max-width: 320px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body main .divBtn .divSimulation{
+    width: 85%;
+    max-width: 288px;
+    height: 50px;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    background: rgb(5, 40, 100);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+body main .divBtn .divSimulation .fa-calculator{
+    color: white;
+    font-size: 2rem;
+}
+body main .divBtn .divSimulation h1{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+body main .divBtn .divVisit{
+    width: 85%;
+    max-width: 288px;
+    height: 50px;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    background: green;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+body main .divBtn .divVisit .fa-calendar-days{
+    color: white;
+    font-size: 2rem;
+}
+body main .divBtn .divVisit h1{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+body main .imgFinal{
+    width: 600px;
+    height: 320px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    display: none;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+
+}
+body main .imgFinal > img{
+    margin-left: -100px;
+    /* width: 100%; */
+    height: 100%;
+    border-radius: 20px;
+}
+body main .imgFinal .divMsg{
+    margin-left: 18px;
+    width: 180px;
+    height: 320px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+body main .imgFinal .divMsg .divTexto{
+    width: 150px;
+    height: 140px;
+    /* border: 1px solid red; */
+    background: orangered;
+    border-radius: 20px 20px 20px 0;
+    box-sizing: border-box;
+    padding: 15px;
+}
+body main .imgFinal .divMsg .divTexto .msgFinal{
+    /* margin: 15px; */
+    color: white;
+    line-height: 150%;
+}
+body main .imgFinal .divMsg > img{
+    height: 170px;
+    /* margin-bottom: 30px; */
+}
+footer{
+    width: 100%;
+    /* height: 200px; */
+    background: rgb(30, 50, 80);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .imgLogo{
+    height: 80px;
+    margin-top: 1rem;
+}
+footer .links{
+    width: 80%;
+    max-width: 256px;
+    display: flex;
+    gap: 1rem;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer .links i{
+    color: white;
+    font-size: 1.8rem;
+}
+footer article{
+    font-size: .625rem;
+    color: white;
+    text-align: center;
+    margin: 15px 10px 60px 10px;
+    line-height: 150%;
+}
+dialog{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+}
+dialog .divModal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+dialog .divModal .divMenu{
+    width: 100%;
+    max-width: 1024px;
+    min-width: 300px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    /* border-radius: 10px; */
+    box-sizing: border-box;
+    position: absolute;
+    top: 80px;
+    align-items: flex-end;
+}
+dialog .divModal .divMenu .btnClose{
+    width: 80px;
+    height: 40px;
+    outline: none;
+    background: grey;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+dialog .divModal .divMenu .pHome{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+@media(min-width: 375px){
+    body main .divImgDefault .imgDefault{
+        margin-top: -80px;
+    }
+}
+@media(min-width: 410px){
+    body main .divImgDefault{
+        height: 250px;
+    }
+}
+@media(min-width: 466px){
+    body main .divImgDefault{
+        height: 300px;
+    }
+}
+@media(min-width: 530px){
+    body main .divImgDefault{
+        height: 350px;
+    }
+}
+@media(min-width: 600px){
+    body main .divImgDefault{
+        height: 400px;
+    }
+    body main .imgFinal{
+        display: flex;
+    }
+    body main .divImgDefault .imgDefault{
+        /* margin-top: -50px; */
+    }
+}
+@media(min-width: 768px){
+    body .divContainerHeader header{
+        max-width: 1024px;
+    }
+    .divContainer{
+        max-width: 1024px;
+    }
+    body .divContainer header{
+        width: 1024px;
+    }
+    body main .divImgDefault{
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    body main .divImgDefault .imgDefault{
+        width: 100%;
+        margin-top: -120px;
+    }
+    body main .divWhats{
+        width: 40px;
+        height: 40px;
+        right: 11rem;
+        bottom: 2rem;
+    }
+    body main .divWhats .fa-square-whatsapp{
+        font-size: 3rem;
+    }
+}
+@media(min-width: 900px){
+    /* body main .divImgDefault{
+        height: 450px;
+    } */
+    body main .divImgDefault .imgDefault{
+        margin-top: -200px;
+    }
+}

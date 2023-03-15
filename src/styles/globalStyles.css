@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: var(--red); */
+}
+:root{
+    --brand100: rgb(43, 13, 121);
+    --brand200: rgb(70, 40, 255);
+    --grey100: rgb(0, 0, 0);
+    --grey800: rgb(235, 235, 235);
+    --grey900: rgb(255, 255, 255);
+    --green: rgb(75, 160, 54);
+    --red: rgb(206, 70, 70);
+}
+@keyframes animationToast{
+    0%{transform: translateX(300px);}
+    100%{transform: translateX(0);}
+    from { opacity: 0.25; }
+    to   { opacity: 1; }
+}
+@keyframes animationLeft{
+    0%{transform: translateX(-300px);}
+    100%{transform: translateX(0);}
+    from { opacity: 0.25; }
+    to   { opacity: 1; }
+}
+@keyframes animationFadeIn{
+    0%{scale: 0.1;}
+    100%{scale: 1;}
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
