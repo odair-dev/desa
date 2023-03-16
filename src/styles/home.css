@@ -10,14 +10,7 @@ body .divContainerHeader{
     position: fixed;
     background: rgb(30, 50, 80);
     box-shadow: 0 2px 2px 1px rgba(5, 40, 100, 0.2);
-}
-body .divContainer{
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    z-index: 1;
 }
 body .divContainerHeader header{
     width: 100%;
@@ -31,12 +24,33 @@ body .divContainerHeader header .imgLogo{
     margin-left: 1rem;
     height: 70px;
 }
+body .divContainerHeader header .ulMenu{
+    display: none;
+    gap: 15px;
+    margin-right: 10px;
+}
+body .divContainerHeader header .ulMenu .liMenu{
+    color: white;
+    cursor: pointer;
+}
+body .divContainerHeader header .ulMenu .liMenu:hover{
+    color: orange;
+    transition: .7s;
+}
 body .divContainerHeader header .fa-bars{
     margin-right: 1rem;
     font-size: 2rem;
     /* color: rgb(5, 40, 100); */
     color: white;
     cursor: pointer;
+}
+body .divContainer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 body main{
     margin-top: 90px;
@@ -113,25 +127,58 @@ body main .containerCard .divCard .headerCard .fa-house{
 body main .containerCard .divCard .headerCard h1{
     font-size: 1.125rem;
     font-weight: 600;
-    margin-left: 1rem;
-    margin-top: .5rem;
+    margin-left: 4rem;
+    /* margin-top: .5rem; */
     color: white;
-    align-self: baseline;
+    /* align-self: center; */
 }
-body main .containerCard .divCard img{
+body main .containerCard .divCard .divImgCard{
+    width: 288px;
+    height: 288px;
+    /* width: 100%; */
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body main .containerCard .divCard .divImgCard img{
     width: 100%;
-    margin-bottom: 0.5rem;
+    cursor: pointer;
+    /* margin-bottom: 0.5rem; */
 }
-
-body main .containerCard .divCard article{
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0 1rem 1rem 1rem;
-    /* color: #242625; */
+body main .containerCard .divCard img:hover{
+    width: 120%;
+    margin-left: -30px;
+    margin-top: -20px;
+    transition: .6s linear;
+}
+body main .containerCard .divCard > p{
+    font-size: .875rem;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
     color: white;
-    align-self: baseline;
-    /* text-align: justify; */
-    line-height: 150%;
+}
+body main .containerCard .divCard .btnMore{
+    width: 250px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: rgb(10, 104, 38);
+    margin-left: 19px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+body main .containerCard .divCard .btnMore:hover{
+    width: 254px;
+    height: 42px;
+    margin-left: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 .divContainerFinal{
     width: 100%;
@@ -200,37 +247,62 @@ body main .divBtn .divVisit h1{
     font-size: 1rem;
     font-weight: 600;
 }
+body main .divBtn .divFinan{
+    width: 85%;
+    max-width: 288px;
+    height: 90px;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    background: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+body main .divBtn .divFinan > img{
+   height: 90%;
+}
 body main .imgFinal{
-    width: 600px;
+    width: 605px;
     height: 320px;
     /* border: 1px solid red; */
     overflow: hidden;
     display: none;
     box-sizing: border-box;
-    border-radius: 20px 0 0 20px;
-
+    /* border-radius: 20px 0 0 20px; */
+    position: relative;
+    margin-right: 25px;
+    border-radius: 10px;
+    z-index: 0;
 }
 body main .imgFinal > img{
-    margin-left: -100px;
+    margin-left: -16px;
     /* width: 100%; */
-    height: 100%;
-    border-radius: 20px;
+    margin-top: -15%;
+    height: 130%;
+    /* border-radius: 20px; */
 }
 body main .imgFinal .divMsg{
-    margin-left: 18px;
+    /* margin-left: 18px; */
     width: 180px;
-    height: 320px;
+    height: 310px;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    position: absolute;
+    right: 10px;
+    top: 5px;
 }
 body main .imgFinal .divMsg .divTexto{
-    width: 150px;
-    height: 140px;
+    width: 145px;
+    height: 135px;
     /* border: 1px solid red; */
-    background: orangered;
+    background: rgba(255, 69, 0, 0.9);
     border-radius: 20px 20px 20px 0;
     box-sizing: border-box;
     padding: 15px;
@@ -241,7 +313,7 @@ body main .imgFinal .divMsg .divTexto .msgFinal{
     line-height: 150%;
 }
 body main .imgFinal .divMsg > img{
-    height: 170px;
+    height: 165px;
     /* margin-bottom: 30px; */
 }
 footer{
@@ -271,6 +343,13 @@ footer .links i{
     font-size: 1.8rem;
 }
 footer article{
+    font-size: .625rem;
+    color: white;
+    text-align: center;
+    margin: 15px 10px 60px 10px;
+    line-height: 150%;
+}
+footer p{
     font-size: .625rem;
     color: white;
     text-align: center;
@@ -356,6 +435,12 @@ dialog .divModal .divMenu .pHome{
     }
     body main .divImgDefault .imgDefault{
         /* margin-top: -50px; */
+    }
+    body .divContainerHeader header .fa-bars{
+        display: none;
+    }
+    body .divContainerHeader header .ulMenu{
+        display: flex;
     }
 }
 @media(min-width: 768px){

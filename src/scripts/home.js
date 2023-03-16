@@ -1,5 +1,6 @@
 let dialogModal = document.querySelector('.dialogModal');
 let iconBars = document.querySelector('.fa-bars');
+let liLogin = document.querySelector('#liLogin');
 
 iconBars.addEventListener('click', ()=>{
     console.log('clicou');
@@ -14,3 +15,6 @@ iconBars.addEventListener('click', ()=>{
     })
 })
 
+liLogin.addEventListener('click', ()=>{
+    window.location.replace('./login.html');
+})
