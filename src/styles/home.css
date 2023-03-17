@@ -44,6 +44,93 @@ body .divContainerHeader header .fa-bars{
     color: white;
     cursor: pointer;
 }
+/* /////////////////////////////////  */
+.divCarousel{
+    width: 100%;
+    max-width: 1024px;
+    height: 56.25vw;
+    max-height: 576px;
+    background: burlywood;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.divBefore{
+    width: 5%;
+    height: 8.5%;
+    border-radius: 50%;
+    background: orangered;
+    position: absolute;
+    left: 1%;
+    top: 45%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.divBefore > i{
+    font-size: 90%;
+    font-weight: 600;
+    color: white;
+}
+.divAfter{
+    width: 5%;
+    height: 8.5%;
+    border-radius: 50%;
+    background: orangered;
+    position: absolute;
+    right: 1%;
+    top: 45%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.divAfter > i{
+    font-size: 90%;
+    font-weight: 600;
+    color: white;
+}
+.divCarousel .divSlides{
+    width: 400%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    box-sizing: border-box;
+    transition: 1s;
+}
+.divCarousel .divSlides .slide01{
+    width: 25%;
+    height: 100%;
+    background: red;
+    overflow: hidden;
+}
+.imgDefault{
+    /* width: 25%; */
+    height: 178%;
+    margin-top: -19%;
+}
+.divCarousel .divSlides .slide02{
+    width: 25%;
+    height: 100%;
+    background: green;
+    overflow: hidden;
+}
+.divCarousel .divSlides .slide03{
+    width: 25%;
+    height: 100%;
+    background: blue;
+    overflow: hidden;
+}
+.divCarousel .divSlides .slide04{
+    width: 25%;
+    height: 100%;
+    background: yellow;
+    overflow: hidden;
+}
+/* /////////////////////////////////  */
 body .divContainer{
     width: 100%;
     box-sizing: border-box;
@@ -406,35 +493,9 @@ dialog .divModal .divMenu .pHome{
     margin-right: .5rem;
     cursor: pointer;
 }
-@media(min-width: 375px){
-    body main .divImgDefault .imgDefault{
-        margin-top: -80px;
-    }
-}
-@media(min-width: 410px){
-    body main .divImgDefault{
-        height: 250px;
-    }
-}
-@media(min-width: 466px){
-    body main .divImgDefault{
-        height: 300px;
-    }
-}
-@media(min-width: 530px){
-    body main .divImgDefault{
-        height: 350px;
-    }
-}
 @media(min-width: 600px){
-    body main .divImgDefault{
-        height: 400px;
-    }
     body main .imgFinal{
         display: flex;
-    }
-    body main .divImgDefault .imgDefault{
-        /* margin-top: -50px; */
     }
     body .divContainerHeader header .fa-bars{
         display: none;
@@ -472,12 +533,10 @@ dialog .divModal .divMenu .pHome{
     body main .divWhats .fa-square-whatsapp{
         font-size: 3rem;
     }
-}
-@media(min-width: 900px){
-    /* body main .divImgDefault{
-        height: 450px;
-    } */
-    body main .divImgDefault .imgDefault{
-        margin-top: -200px;
+    .divBefore > i{
+        font-size: 150%;
+    }
+    .divAfter > i{
+        font-size: 150%;
     }
 }
